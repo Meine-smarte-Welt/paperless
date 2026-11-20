@@ -1,0 +1,15 @@
+{
+  "domain": "paperless_manager",
+  "name": "Paperless Manager",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": ["http", "websocket_api"],
+  "after_dependencies": ["lovelace"],
+  "documentation": "https://github.com/meine-smarte-welt/paperless_manager",
+  "integration_type": "service",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/meine-smarte-welt/paperless_manager/issues",
+  "loggers": ["pypaperless"],
+  "requirements": ["pypaperless==5.2.3"],
+  "version": "1.0.0b1"
+}

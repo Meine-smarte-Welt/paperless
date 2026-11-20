@@ -1,0 +1,12 @@
+{
+  "entity": {
+    "sensor": {
+      "documents_total": {"default": "mdi:file-document-multiple-outline"},
+      "documents_inbox": {"default": "mdi:inbox-arrow-down"},
+      "documents_incomplete": {"default": "mdi:file-alert-outline"},
+      "correspondent_count": {"default": "mdi:account-group-outline"},
+      "document_type_count": {"default": "mdi:shape-outline"},
+      "tag_count": {"default": "mdi:tag-multiple-outline"}
+    }
+  }
+}

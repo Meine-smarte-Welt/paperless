@@ -1,0 +1,92 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect Paperless-ngx",
+        "description": "Address of your Paperless-ngx instance and an API token (Paperless: My Profile → API token). Editing requires change permissions for the user.",
+        "data": {
+          "url": "Address (URL)",
+          "api_key": "API token",
+          "verify_ssl": "Verify SSL certificate"
+        }
+      },
+      "reconfigure": {
+        "title": "Change connection",
+        "data": {
+          "url": "Address (URL)",
+          "api_key": "API token",
+          "verify_ssl": "Verify SSL certificate"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Sign in again",
+        "description": "The API token was rejected. Enter a new token.",
+        "data": {
+          "api_key": "API token"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to Paperless-ngx.",
+      "invalid_api_key": "Invalid API token.",
+      "user_inactive_or_deleted": "User is inactive or deleted.",
+      "forbidden": "The user lacks the required permissions.",
+      "unknown": "Unexpected error (see log)."
+    },
+    "abort": {
+      "already_configured": "This instance is already set up.",
+      "reauth_successful": "Sign-in renewed.",
+      "reconfigure_successful": "Connection updated."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Paperless Manager – options",
+        "description": "Installed version: {version}\n{update_info}\n\nThe switches for individual experimental features appear once the main switch is saved.",
+        "data": {
+          "scan_interval": "Polling interval (seconds)",
+          "max_documents": "Number of loaded documents (newest first)",
+          "experimental_enabled": "Show experimental features",
+          "exp_edit": "Experimental: edit documents and names"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "documents_total": {
+        "name": "Documents total"
+      },
+      "documents_inbox": {
+        "name": "Documents in inbox"
+      },
+      "documents_incomplete": {
+        "name": "Incomplete documents"
+      },
+      "correspondent_count": {
+        "name": "Correspondents"
+      },
+      "document_type_count": {
+        "name": "Document types"
+      },
+      "tag_count": {
+        "name": "Tags"
+      }
+    }
+  },
+  "exceptions": {
+    "cannot_connect": {
+      "message": "Cannot connect to Paperless-ngx."
+    },
+    "invalid_api_key": {
+      "message": "Invalid API token."
+    },
+    "user_inactive_or_deleted": {
+      "message": "User is inactive or deleted."
+    },
+    "forbidden": {
+      "message": "The user lacks the required permissions."
+    }
+  }
+}

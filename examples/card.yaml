@@ -1,0 +1,14 @@
+# SHA256 (Inhalt ab Zeile 2, d.h. dieser Datei ohne diese erste Zeile): c0ee9c095fe1db34c05721407a820e889326e277fc415fa9ef0a46be8c2de3ec
+type: custom:paperless-manager-card
+title: Paperless
+default_tab: documents
+show_documents: true
+show_correspondents: true
+show_types: true
+show_tags: true
+show_settings: true
+max_rows: 50
+default_sort: added
+# Bearbeiten (experimentell): zusätzlich in den Optionen der Integration einschalten
+show_experimental: true
+read_only: false

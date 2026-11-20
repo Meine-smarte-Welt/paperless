@@ -1,0 +1,92 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Paperless-ngx verbinden",
+        "description": "Adresse deiner Paperless-ngx-Instanz und ein API-Token (Paperless: Mein Profil → API-Token). Für das Bearbeiten braucht der Benutzer Änderungsrechte.",
+        "data": {
+          "url": "Adresse (URL)",
+          "api_key": "API-Token",
+          "verify_ssl": "SSL-Zertifikat prüfen"
+        }
+      },
+      "reconfigure": {
+        "title": "Verbindung ändern",
+        "data": {
+          "url": "Adresse (URL)",
+          "api_key": "API-Token",
+          "verify_ssl": "SSL-Zertifikat prüfen"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Neu anmelden",
+        "description": "Das API-Token wurde abgelehnt. Gib ein neues Token ein.",
+        "data": {
+          "api_key": "API-Token"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Keine Verbindung zu Paperless-ngx.",
+      "invalid_api_key": "Ungültiges API-Token.",
+      "user_inactive_or_deleted": "Benutzer ist inaktiv oder gelöscht.",
+      "forbidden": "Dem Benutzer fehlen die nötigen Rechte.",
+      "unknown": "Unerwarteter Fehler (siehe Log)."
+    },
+    "abort": {
+      "already_configured": "Diese Instanz ist bereits eingerichtet.",
+      "reauth_successful": "Anmeldung erneuert.",
+      "reconfigure_successful": "Verbindung aktualisiert."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Paperless Manager – Optionen",
+        "description": "Installierte Version: {version}\n{update_info}\n\nDie Einzelschalter für experimentelle Funktionen erscheinen, sobald der Hauptschalter gespeichert ist.",
+        "data": {
+          "scan_interval": "Abfrageintervall (Sekunden)",
+          "max_documents": "Anzahl geladener Dokumente (neueste zuerst)",
+          "experimental_enabled": "Experimentelle Funktionen anzeigen",
+          "exp_edit": "Experimentell: Dokumente und Namen bearbeiten"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "documents_total": {
+        "name": "Dokumente gesamt"
+      },
+      "documents_inbox": {
+        "name": "Dokumente im Posteingang"
+      },
+      "documents_incomplete": {
+        "name": "Unvollständige Dokumente"
+      },
+      "correspondent_count": {
+        "name": "Korrespondenten"
+      },
+      "document_type_count": {
+        "name": "Dokumenttypen"
+      },
+      "tag_count": {
+        "name": "Tags"
+      }
+    }
+  },
+  "exceptions": {
+    "cannot_connect": {
+      "message": "Keine Verbindung zu Paperless-ngx."
+    },
+    "invalid_api_key": {
+      "message": "Ungültiges API-Token."
+    },
+    "user_inactive_or_deleted": {
+      "message": "Benutzer ist inaktiv oder gelöscht."
+    },
+    "forbidden": {
+      "message": "Dem Benutzer fehlen die nötigen Rechte."
+    }
+  }
+}
